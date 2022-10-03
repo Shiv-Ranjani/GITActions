@@ -3,9 +3,7 @@ on: push
 jobs:
   reusable_workflow_job:
     uses:Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Workflow01
-        run: echo "Workflow01!"
+  steps:
+    - name: Workflow01
+      run: echo "Workflow01!"
     
