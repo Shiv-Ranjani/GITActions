@@ -2,7 +2,7 @@ name: hello-world
 on: push
 jobs:
   reusable_workflow_job:
-    uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
+    uses:Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
   my-job:
     runs-on: ubuntu-latest
     steps:
