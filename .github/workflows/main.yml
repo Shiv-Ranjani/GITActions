@@ -3,7 +3,7 @@ name: main file
 on: [push]
 
 jobs:
-  build:
+  steps:
     uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
      # - name: Welcome
       #  run: echo "Welcome!!!"
