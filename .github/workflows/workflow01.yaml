@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Workflow01
-      run: echo "Workflow01!"
+      run: echo Workflow01!
     - name : helloworld
       run: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
  
