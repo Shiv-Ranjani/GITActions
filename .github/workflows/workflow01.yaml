@@ -7,6 +7,6 @@ jobs:
     - name: Workflow01
       run: echo Workflow01!
     - name : helloworld
-      run: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+      uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
  
     
