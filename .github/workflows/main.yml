@@ -6,6 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Install dependencies
+      - uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+      - name: Welcome
         run: echo "Welcome!!!"
