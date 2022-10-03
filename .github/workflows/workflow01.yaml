@@ -6,7 +6,8 @@ jobs:
     steps:
     - name: Workflow01
       run: echo "Workflow01!"
-  # reusable_workflow_job:
-    # uses:Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+  reusable_workflow_job:
+    - name : helloworld
+      uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
  
     
