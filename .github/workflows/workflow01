@@ -1,9 +1,11 @@
 name: hello-world
 on: push
 jobs:
-  reusable_workflow_job:
-    uses:Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
-  steps:
+  myjob:
+    steps:
     - name: Workflow01
       run: echo "Workflow01!"
+  reusable_workflow_job:
+    uses:Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+ 
     
