@@ -1,0 +1,22 @@
+name: main file
+
+on:
+  workflow_dispatch:
+    inputs:
+      VM_version:
+        description: 'VM version'
+        required: true
+        default: '2.3'
+      VM_size:
+        description: 'Publish artifacts'
+        required: true
+        default: 'true'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: create string
+        run: |
+          MY_STRING= ${{ github.event.inputs.stringname }}'
+          echo "$MY_STRING"
