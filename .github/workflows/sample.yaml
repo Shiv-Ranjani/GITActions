@@ -1,9 +1,0 @@
-name: HelloWorld 
- on:
-  workflow_dispatch:
-
- jobs:
-  checkout:
-   uses: org/repo/.github/workflows/build.yml@main
-   with:
-    jdk_version: 11
