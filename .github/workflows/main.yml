@@ -5,6 +5,10 @@ on: [push]
 jobs:
   job1:
     uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+  job2:
+    uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+    
+  
  
     
 
