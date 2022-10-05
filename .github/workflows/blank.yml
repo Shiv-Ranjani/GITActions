@@ -8,9 +8,9 @@ on:
         required: true
         default: '2.3'
       VM_size:
-        description: 'Publish artifacts'
+        description: 'VM Size'
         required: true
-        default: 'true'
+        default: '10G'
 
 jobs:
   job1:
