@@ -6,7 +6,7 @@ on:
       VM_version:
         description: 'VM version'
         #required: true
-        default: '2.3'
+        #default: '2.3'
       VM_size:
         description: 'VM Size'
         required: true
