@@ -1,16 +1,15 @@
 name: main file
 
-on: [push]
+on:
+  workflow_dispatch
 
 jobs:
-  job1:
-    uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
   job2:
     runs-on: ubuntu-latest
     steps: 
       - name: create string
         run: |
-          MY_STRING="hello world"
+          MY_STRING= ${{ github.event.inputs.stringname }}'
           echo "::set-output name=content::$MY_STRING"
         id: my_string
       - name: display string
