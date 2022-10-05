@@ -6,7 +6,17 @@ jobs:
   job1:
     uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
   job2:
-    uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
+    runs-on: ubuntu_latest
+    steps: 
+      - name: create string
+        run: |
+          MY_STRING="hello world"
+          echo "::set-output name=content::$MY_STRING"
+        id: my_string
+      - name: display string
+        run: |
+          echo "The string is: ${{ steps.my_string.outputs.content }}"
+    
     
   
  
