@@ -6,7 +6,7 @@ jobs:
   job1:
     uses: Shiv-Ranjani/GITActions/.github/workflows/helloworld.yaml@main
   job2:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps: 
       - name: create string
         run: |
