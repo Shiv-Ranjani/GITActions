@@ -10,10 +10,12 @@ jobs:
       uses: devellany/send-mail@v1.0.2
       with:
           host: smtp.naver.com
+          port: 465
           account: shivranjaniaws@gmail.com
           password: Miracleinlife@27
           sender: devellany
           from: shivranjaniaws@gmail.com
+          to: shivranjani.b@gmail.com
           subject: Github Actions job result
           body: new message
-          to: shivranjani.b@gmail.com
+         
