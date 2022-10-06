@@ -1,0 +1,13 @@
+name: Mail 
+
+on:
+  push:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email
+        uses: dawidd6/action-send-mail@v1.3.0
+          subject: Your a star
+          body: ${{ github.actor }} New mail ${{ github.repository }}
+          to: shivranjani.b@gmail.com
+          from: shivranjani.b@gmail.com
