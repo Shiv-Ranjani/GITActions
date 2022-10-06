@@ -18,4 +18,5 @@ jobs:
           to: shivranjani.b@gmail.com
           subject: Github Actions job result
           body: new message
-         
+          contentType: text/plain
+          attachments: '[{"path":"README.md"}]'
