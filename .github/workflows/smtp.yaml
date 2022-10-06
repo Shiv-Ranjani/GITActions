@@ -9,7 +9,7 @@ jobs:
     - name: Send email
       uses: dawidd6/action-send-mail@v3
       with:
-          host: smtp.naver.com
+          host: smtp.gmail.com
           account: shivranjaniaws@gmail.com
           password: Miracleinlife@27
           sender: shivranjani
