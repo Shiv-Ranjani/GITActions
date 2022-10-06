@@ -12,7 +12,7 @@ jobs:
           host: smtp.naver.com
           account: shivranjaniaws@gmail.com
           password: Miracleinlife@27
-          sender: shivranjani
+          sender: devellany
           from: shivranjaniaws@gmail.com
           subject: Github Actions job result
           body: new message
