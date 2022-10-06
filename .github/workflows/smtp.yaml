@@ -1,13 +1,19 @@
-name: Mail 
-
+name: CI
 on:
   push:
-
+jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Send email
-        uses: dawidd6/action-send-mail@v1.3.0
-          subject: Your a star
-          body: ${{ github.actor }} New mail ${{ github.repository }}
+    - uses: actions/checkout@v2
+    - name: Send email
+      uses: devellany/send-mail@v1.0.2
+      with:
+          host: smtp.naver.com
+          account: shivranjaniaws@gmail.com
+          password: Miracleinlife@27
+          sender: shivranjani
+          from: shivranjaniaws@gmail.com
+          subject: Github Actions job result
+          body: new message
           to: shivranjani.b@gmail.com
-          from: shivranjani.b@gmail.com
