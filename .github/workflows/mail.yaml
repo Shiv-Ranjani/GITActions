@@ -1,11 +1,19 @@
-- name: Send some mail
-  uses: wadeww/send-email-action@master
-  with:
-    server_address: smtp.gmail.com
-    port: 465
-    username: shivranjani.b@gmail.com
-    password: Miracleinlife@27
-    subject: Workflow finished
-    body: Job completed ${{job.status}}
-    to: shivranjaniaws@gmail.com
-    from: Me
+name: Send some mail
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Send email
+      uses: wadeww/send-email-action@master
+      with:
+        server_address: smtp.gmail.com
+        port: 465
+        username: shivranjani.b@gmail.com 
+        password: Miracle
+        subject: Workflow finished
+        body: Job completed ${{job.status}}
+        to: shivranjaniaws@gmail.com
+        from: Me
