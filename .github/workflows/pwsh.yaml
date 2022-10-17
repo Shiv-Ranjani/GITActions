@@ -1,6 +1,6 @@
 name: pwsh
 on: 
-  push:
+  workflow_dispatch:
 jobs:
   build: 
     name: run-script
