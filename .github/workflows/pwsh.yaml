@@ -1,0 +1,12 @@
+name: pwsh
+on: 
+  push:
+jobs:
+  build: 
+    name: run-script
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: script
+      run: ./new.ps1
+      shell: pwsh
